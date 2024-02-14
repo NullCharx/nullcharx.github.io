@@ -1,24 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JSON2Climate werbscrip</title>
+    <title>Biome Converter</title>
 </head>
 <body>
-    <header>
-        <h1>JSON2Climate werbscript</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Description</h2>
-            <p>uwu.</p>
-        </section>
-        <section>
-            <h2>How to Use</h2>
-            <p>uwu.</p>
-        </section>
-        <script src="convertJSON.js"></script>
-    </main>
+    <h1>Biome JSON to Climate Parameter List Converter</h1>
+    <form id="converterForm">
+        <label for="jsonInput">Paste your biome JSON here:</label><br>
+        <h2>Remember to paste only the biomes list. Starting with "biomes" : [. The header with the dimension info is not relevant.</h2>
+        <textarea id="jsonInput" name="jsonInput" rows="10" cols="50"></textarea><br>
+        <input type="file" id="fileInput" name="fileInput"><br>
+        <button type="button" onclick="convertInput()">Convert</button>
+    </form>
+    <h2>Converted Output:</h2>
+    <pre id="output"></pre>
+
+    <script src="./convertJSON.js"></script>
 </body>
 </html>
+
