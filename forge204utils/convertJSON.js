@@ -31,7 +31,7 @@ function convertToClimateParameterList() {
         // Display the output
         document.getElementById("output").textContent = `new Climate.ParameterList<>(List.of(\n ${output.join(',\n')} \n));`;
     } catch (e) {
-        alert("Invalid JSON. Please check your input.");
+        alert("Invalid JSON. Please check your input.\nError: " + e.message + "\n" + e.stack);
         console.error(e);
     }
 }
