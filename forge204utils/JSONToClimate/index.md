@@ -3,7 +3,7 @@ layout: JSONFormcustom
 title: My Page Title
 ---
 
-# Heading 1
+# Instructions
 
 Input below the json text for your custom dimension file. Remember that this is ran client-side. 
 
