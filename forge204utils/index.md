@@ -1,5 +1,5 @@
 ---
-layout: custom
+layout: JSONFormcustom
 title: My Page Title
 ---
 
