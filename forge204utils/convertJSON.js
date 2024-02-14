@@ -1,6 +1,11 @@
 function convertToClimateParameterList() {
     const jsonInput = document.getElementById("jsonInput").value;
     try {
+        const jsonInput = document.getElementById("jsonInput").value.trim(); // Trim whitespace
+        if (!jsonInput) {
+            alert("Please enter JSON input.");
+            return;
+        }
         // Parse the full JSON input
         const fullData = JSON.parse(jsonInput);
         // Navigate to the biomes array within the biome_source object
