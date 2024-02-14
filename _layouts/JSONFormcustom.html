@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+</head>
+<body>
+    <!-- Site header and navigation can go here -->
+
+    <div class="content">
+        <!-- This is where your page content will be inserted -->
+        {{ content }}
+    </div>
+
+      <form id="converterForm">
+        <label for="jsonInput">Paste your dimension generator JSON here:</label><br>
+        <textarea id="jsonInput" name="jsonInput" rows="10" cols="50"></textarea><br>
+        <input type="file" id="fileInput" name="fileInput"><br>
+        <button type="button" onclick="convertToClimateParameterList()">Convert</button>
+    </form>
+    <h2>Converted Output:</h2>
+    <pre id="output"></pre>
+
+    <!-- Your JavaScript file is included here -->
+    <script src="/scripts/your-script.js"></script>
+
+    <!-- Footer content can go here -->
+</body>
+</html>
